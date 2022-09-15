@@ -52,3 +52,33 @@ if (hacker1 > hacker2) {
 } else {
   console.log("What?! You both have the same name?");
 }
+
+//bonus1
+
+let lorem = `lorem`;
+
+function amountOfWords(andreu) {
+  return andreu.split(" ").filter((word) => word !== "").length;
+}
+
+console.log(amountOfWords(lorem));
+
+function etFindingWithFilter(juan) {
+  return juan.split(" ").filter((farik) => farik == "et").length;
+}
+
+console.log(etFindingWithFilter(lorem));
+
+//bonus2
+
+let phraeToCheck = "luzazul";
+
+function palindromeCheck(wordToCheck) {
+  let length = wordToCheck.length - 1;
+  let index = 0;
+
+  while (index < length) {
+    if (wordToCheck(index) === " ") index++;
+    else if (wordToCheck[length] === " ") length--;
+  }
+}
